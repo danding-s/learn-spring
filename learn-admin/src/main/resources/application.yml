@@ -1,0 +1,28 @@
+spring:
+  #mysql配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Chongqing
+    username: root
+    password: root
+
+  #jpa配置
+  jpa:
+    hibernate:
+      ddl-auto: update # create每次运行都删除原有表创建新表,update不用每次创建新表
+    show-sql: true # 打印SQL语句
+
+  #http请求配置
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
