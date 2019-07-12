@@ -1,7 +1,7 @@
 package com.learn.controller;
 
 import com.learn.common.ResultGenerator;
-import com.learn.model.User;
+import com.learn.entity.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
